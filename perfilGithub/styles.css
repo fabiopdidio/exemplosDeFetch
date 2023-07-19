@@ -1,0 +1,40 @@
+body {
+  text-align: center;
+  padding: 50px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: blueviolet;
+  color: white;
+}
+
+#profile {
+  margin-top: 30px;
+}
+
+#profile img {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  border: 2px solid red;
+  background-color: #ffcccc;
+  color: red;
+  padding: 10px;
+  margin-top: 20px;
+}
