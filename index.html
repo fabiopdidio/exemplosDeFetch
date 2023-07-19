@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Pesquisa de CEP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Pesquisa de CEP</h1>
+
+    <form id="cepForm">
+      <label for="cep">CEP:</label>
+      <input
+        type="text"
+        id="cep"
+        name="cep"
+        maxlength="9"
+        placeholder="Digite o CEP"
+        required
+      />
+      <button type="submit">Pesquisar</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
