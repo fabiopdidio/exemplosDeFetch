@@ -10,9 +10,10 @@ function exibirDados(event) {
 
   if (cep.length === 8 || cep.length === 9) { // Delimita um númeo de caracteres para 8 ou 9 (aceitando "-")
     fetch(`https://viacep.com.br/ws/${cep}/json/`) // GET (precisa utilizar https://)
-      .then((response) => response.json())
-      .then((data) => {
-        const resultDiv = document.getElementById("result");
+      .then((response) => response.json()) // Processa a resposta da solicitação HTTP e converte os dados em formato JSON.
+      .then((data) => { // Manipula os dados JSON obtidos da resposta da solicitação.
+        const resultDiv = document.getElementById("result"); // Obtém uma referência ao elemento HTML com o ID "result".
+        
         resultDiv.innerHTML = `
             <p>Endereço: ${data.logradouro}</p>
             <p>Bairro: ${data.bairro}</p>
@@ -21,10 +22,10 @@ function exibirDados(event) {
             <p>DDD: ${data.ddd}</p>
         `;
       })
-      .catch(() => {
-        alert("ERRO AO FAZER A SOLICITACAO");
+      .catch(() => { // Rejeição ou erro
+        alert("ERRO AO FAZER A SOLICITACAO"); // Alert para erro
       });
   } else {
-    alert("Digitado o cep completo");
+    alert("Digitado o cep completo"); // menos que 9 caracteres
   }
 }
