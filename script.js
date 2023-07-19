@@ -1,3 +1,4 @@
+// Vai no HTML, pega o elemento cepForm e adiciona um evento de escuta para submit para exibir dados
 document.getElementById("cepForm").addEventListener("submit", exibirDados);
 
 function exibirDados(event) {
